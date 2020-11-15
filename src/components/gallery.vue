@@ -34,9 +34,11 @@ export default {
             this.img4[0].style.zIndex = 11;
         },
         img4MouseLeave(){
-            setTimeout(() => {
-                this.img4[0].style.zIndex = 1;
-            } , 1200);
+            if(this.img4[0].classList.length != 2){
+                setTimeout(() => {
+                    this.img4[0].style.zIndex = 1;
+                } , 1200);
+            }
         },
 
         img1Clicked(){
